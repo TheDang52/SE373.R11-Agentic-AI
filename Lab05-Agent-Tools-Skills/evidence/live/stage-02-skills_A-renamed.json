@@ -1,0 +1,44 @@
+{
+  "mode": "live-provider",
+  "stage": "stage-02-skills",
+  "case": "A-renamed",
+  "question": "Tôi mua ngày 28/09/2026, yêu cầu hoàn ngày 06/10/2026, chưa kích hoạt. Tôi có được hoàn không?",
+  "model": "oc/muse-spark-1.2-contributor-free",
+  "conversation_id": "b23aa6648e1d494baf80274516645662",
+  "renamed_files": {
+    "policy-before-oct.md": "edition-31.md",
+    "policy-from-oct.md": "edition-32.md"
+  },
+  "trace": "20261007-220132_b23aa664_turn01_fd7ba2f9.jsonl",
+  "status": "completed",
+  "answer": "Dựa trên chính sách đã đọc:\n\n- **Chính sách áp dụng:** Chính sách hoàn tiền trước tháng 10 - áp dụng cho ngày mua **trước 2026-10-01** (`data/policies/edition-31.md`). Ngày mua của bạn là **28/09/2026** nên thuộc chính sách này. Chính sách từ tháng 10 (`data/policies/edition-32.md`) áp dụng từ 2026-10-01 bao gồm ngày này nên không áp dụng cho trường hợp này.\n\n- **Số ngày đã qua:** Ngày yêu cầu **06/10/2026** trừ ngày mua **28/09/2026** = **8 ngày lịch** (28/09 -> 06/10).\n\n- **Kết luận:** **Không đủ điều kiện hoàn tiền.** Lý do:\n  - Thời hạn: chính sách cho phép yêu cầu trong **7 ngày** kể từ ngày mua, bạn đã quá 8 ngày -> không thỏa điều kiện thời hạn.\n  - Trạng thái kích hoạt: **chưa kích hoạt** -> thỏa điều kiện chưa kích hoạt, nhưng vẫn không đủ do quá hạn.\n\n- **Phí nếu đủ điều kiện:** Không áp dụng do không đủ điều kiện. Nếu đủ điều kiện theo chính sách này, phí sẽ là **10% giá trị đơn hàng**.\n\n- **Căn cứ:** `data/policies/edition-31.md` và `data/policies/edition-32.md`",
+  "inventory": {
+    "skills": [
+      {
+        "path": "skills/refund-policy/SKILL.md",
+        "message_index": 2,
+        "tool_call_id": "call_01a116e25e92721699a432dfd2ada230",
+        "skill": "refund-policy",
+        "chars": 1754,
+        "first_request": "Lượt 1, model call #2"
+      }
+    ],
+    "resources": [
+      {
+        "path": "data/policies/edition-31.md",
+        "message_index": 6,
+        "tool_call_id": "call_01a116e26eeb74c08a274d6a0bb83899"
+      },
+      {
+        "path": "data/policies/edition-32.md",
+        "message_index": 7,
+        "tool_call_id": "call_01a116e26f9a763eaa9e2f64bf9a8f17"
+      },
+      {
+        "path": "skills/refund-policy/references/answer-template.md",
+        "message_index": 8,
+        "tool_call_id": "call_01a116e270637101aa19f3813e5437f0"
+      }
+    ]
+  }
+}

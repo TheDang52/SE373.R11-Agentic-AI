@@ -1,0 +1,41 @@
+{
+  "mode": "live-provider",
+  "stage": "stage-02-skills",
+  "case": "A",
+  "question": "Tôi mua ngày 28/09/2026, yêu cầu hoàn ngày 06/10/2026, chưa kích hoạt. Tôi có được hoàn không?",
+  "model": "oc/muse-spark-1.2-contributor-free",
+  "conversation_id": "d0512596146947129e23514339167922",
+  "renamed_files": {},
+  "trace": "20261007-220032_d0512596_turn01_dbc4bc15.jsonl",
+  "status": "completed",
+  "answer": "Dựa trên thông tin bạn cung cấp và chính sách đã đọc:\n\n- **Chính sách áp dụng:** Chính sách hoàn tiền trước tháng 10 - áp dụng cho ngày mua trước 2026-10-01. Đơn của bạn mua ngày **28/09/2026** nên thuộc chính sách này.\n\n- **Số ngày đã qua:** Ngày yêu cầu hoàn **06/10/2026** trừ ngày mua **28/09/2026** = **8 ngày lịch**.\n\n- **Kết luận:** **Không đủ điều kiện hoàn tiền.**\n  - Về thời hạn: Chính sách yêu cầu trong **7 ngày** kể từ ngày mua, bạn đã quá hạn 1 ngày (8 > 7).\n  - Về trạng thái kích hoạt: Bạn **chưa kích hoạt** nên thỏa điều kiện này, nhưng vẫn không đủ điều kiện do quá thời hạn.\n\n- **Phí:** Không áp dụng vì không đủ điều kiện hoàn tiền. Theo tài liệu, nếu đủ điều kiện trong 7 ngày và chưa kích hoạt thì phí là 10%.\n\n- **Căn cứ:** `data/policies/policy-before-oct.md` (đã đối chiếu với `data/policies/policy-from-oct.md` để xác định phạm vi theo ngày mua).",
+  "inventory": {
+    "skills": [
+      {
+        "path": "skills/refund-policy/SKILL.md",
+        "message_index": 2,
+        "tool_call_id": "call_01a116e1747b77be91178f54e49dfb6a",
+        "skill": "refund-policy",
+        "chars": 1754,
+        "first_request": "Lượt 1, model call #2"
+      }
+    ],
+    "resources": [
+      {
+        "path": "data/policies/policy-before-oct.md",
+        "message_index": 6,
+        "tool_call_id": "call_01a116e187ad736e95d663e2b55ffcc9"
+      },
+      {
+        "path": "data/policies/policy-from-oct.md",
+        "message_index": 8,
+        "tool_call_id": "call_01a116e195a2733c8bbe1164dcef8350"
+      },
+      {
+        "path": "skills/refund-policy/references/answer-template.md",
+        "message_index": 10,
+        "tool_call_id": "call_01a116e1ab22741badeb910f04633e1c"
+      }
+    ]
+  }
+}

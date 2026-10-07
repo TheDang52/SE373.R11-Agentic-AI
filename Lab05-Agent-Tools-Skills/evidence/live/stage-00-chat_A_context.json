@@ -1,0 +1,136 @@
+{
+  "label": "Context gửi model (lớp LangChain), không phải provider wire payload",
+  "conversation_id": "645f8c5c87c34476a251bbb507450648",
+  "counters": {
+    "Trạng thái": "Hoàn tất",
+    "Lượt chat": 1,
+    "Lần gọi model trong lượt": 1,
+    "Bước sự kiện trong lượt": 4,
+    "Tool calls trong lượt": 0
+  },
+  "messages": [
+    {
+      "role": "user",
+      "type": "human",
+      "content": "Tôi mua ngày 28/09/2026, yêu cầu hoàn ngày 06/10/2026, chưa kích hoạt. Tôi có được hoàn không?",
+      "id": "bb611c0d-4322-45ff-aee4-215ec6feba95"
+    },
+    {
+      "role": "assistant",
+      "type": "ai",
+      "content": "Hiện tại tôi không được cấp tool để đọc file hay truy cập dữ liệu chính sách hoàn tiền, nên không thể kiểm tra trực tiếp trường hợp của bạn và không bịa kết quả.\n\nBạn mua ngày 28/09/2026 và yêu cầu hoàn ngày 06/10/2026 (cách 8 ngày), chưa kích hoạt.\n\nĐể xác nhận có được hoàn hay không, bạn vui lòng cung cấp nội dung chính sách hoàn hoặc liên hệ bộ phận hỗ trợ để đối chiếu điều kiện về thời hạn hoàn và trạng thái kích hoạt.",
+      "id": "lc_run--01a116ee-a490-7991-8ca8-492936bc2e0a-0",
+      "tool_calls": [],
+      "usage_metadata": {
+        "input_tokens": 825,
+        "output_tokens": 1152,
+        "total_tokens": 1977,
+        "input_token_details": {},
+        "output_token_details": {}
+      }
+    }
+  ],
+  "snapshots": [
+    {
+      "label": "Context gửi model (lớp LangChain)",
+      "conversation_id": "645f8c5c87c34476a251bbb507450648",
+      "run_id": "aebfb190244b444c9674bc2af40eb05d",
+      "chat_turn": 1,
+      "model_call_index": 1,
+      "event_sequence": 2,
+      "captured_at": "2026-10-07T15:15:00.879+00:00",
+      "model_name": "oc/muse-spark-1.2-contributor-free",
+      "system_prompt": "Bạn là trợ lý trong lab \"Agent Tools & Skills\". Trả lời bằng tiếng Việt, ngắn gọn, rõ ràng.\n\nQuy tắc:\n- Chỉ dùng các tool được cấp trong request để thao tác dữ liệu. Nếu không có tool phù hợp, nói rõ giới hạn thay vì đoán.\n- Chỉ nói đã đọc, ghi hoặc chạy một thứ khi đã nhận tool result thành công cho đúng thao tác đó.\n- Khi tool trả lỗi, báo lỗi cho người dùng và đề xuất cách xử lý; không bịa kết quả.\n\nProject này không cấp tool nào: bạn không đọc được file, không ghi được file và không chạy được lệnh.\nNếu người dùng yêu cầu đọc file hoặc dữ liệu, nói rõ bạn không có quyền truy cập và không bịa nội dung.",
+      "messages": [
+        {
+          "role": "user",
+          "type": "human",
+          "content": "Tôi mua ngày 28/09/2026, yêu cầu hoàn ngày 06/10/2026, chưa kích hoạt. Tôi có được hoàn không?",
+          "id": "bb611c0d-4322-45ff-aee4-215ec6feba95"
+        }
+      ],
+      "tools": [],
+      "message_count": 1,
+      "system_prompt_chars": 611,
+      "message_chars": 94,
+      "usage": {
+        "input_tokens": 825,
+        "output_tokens": 1152,
+        "total_tokens": 1977,
+        "input_token_details": {},
+        "output_token_details": {}
+      }
+    }
+  ],
+  "events": [
+    {
+      "conversation_id": "645f8c5c87c34476a251bbb507450648",
+      "run_id": "aebfb190244b444c9674bc2af40eb05d",
+      "chat_turn": 1,
+      "sequence": 1,
+      "type": "user_submitted",
+      "timestamp": "2026-10-07T15:15:00.564+00:00",
+      "content": "Tôi mua ngày 28/09/2026, yêu cầu hoàn ngày 06/10/2026, chưa kích hoạt. Tôi có được hoàn không?"
+    },
+    {
+      "conversation_id": "645f8c5c87c34476a251bbb507450648",
+      "run_id": "aebfb190244b444c9674bc2af40eb05d",
+      "chat_turn": 1,
+      "sequence": 2,
+      "type": "model_request",
+      "timestamp": "2026-10-07T15:15:00.880+00:00",
+      "model_call_index": 1,
+      "snapshot": {
+        "label": "Context gửi model (lớp LangChain)",
+        "conversation_id": "645f8c5c87c34476a251bbb507450648",
+        "run_id": "aebfb190244b444c9674bc2af40eb05d",
+        "chat_turn": 1,
+        "model_call_index": 1,
+        "event_sequence": 2,
+        "captured_at": "2026-10-07T15:15:00.879+00:00",
+        "model_name": "oc/muse-spark-1.2-contributor-free",
+        "system_prompt": "Bạn là trợ lý trong lab \"Agent Tools & Skills\". Trả lời bằng tiếng Việt, ngắn gọn, rõ ràng.\n\nQuy tắc:\n- Chỉ dùng các tool được cấp trong request để thao tác dữ liệu. Nếu không có tool phù hợp, nói rõ giới hạn thay vì đoán.\n- Chỉ nói đã đọc, ghi hoặc chạy một thứ khi đã nhận tool result thành công cho đúng thao tác đó.\n- Khi tool trả lỗi, báo lỗi cho người dùng và đề xuất cách xử lý; không bịa kết quả.\n\nProject này không cấp tool nào: bạn không đọc được file, không ghi được file và không chạy được lệnh.\nNếu người dùng yêu cầu đọc file hoặc dữ liệu, nói rõ bạn không có quyền truy cập và không bịa nội dung.",
+        "messages": [
+          {
+            "role": "user",
+            "type": "human",
+            "content": "Tôi mua ngày 28/09/2026, yêu cầu hoàn ngày 06/10/2026, chưa kích hoạt. Tôi có được hoàn không?",
+            "id": "bb611c0d-4322-45ff-aee4-215ec6feba95"
+          }
+        ],
+        "tools": [],
+        "message_count": 1,
+        "system_prompt_chars": 611,
+        "message_chars": 94,
+        "usage": null
+      }
+    },
+    {
+      "conversation_id": "645f8c5c87c34476a251bbb507450648",
+      "run_id": "aebfb190244b444c9674bc2af40eb05d",
+      "chat_turn": 1,
+      "sequence": 3,
+      "type": "model_response",
+      "timestamp": "2026-10-07T15:15:15.581+00:00",
+      "model_call_index": 1,
+      "elapsed_ms": 14700.6,
+      "tool_calls_requested": [],
+      "usage": {
+        "input_tokens": 825,
+        "output_tokens": 1152,
+        "total_tokens": 1977,
+        "input_token_details": {},
+        "output_token_details": {}
+      }
+    },
+    {
+      "conversation_id": "645f8c5c87c34476a251bbb507450648",
+      "run_id": "aebfb190244b444c9674bc2af40eb05d",
+      "chat_turn": 1,
+      "sequence": 4,
+      "type": "run_completed",
+      "timestamp": "2026-10-07T15:15:15.586+00:00",
+      "answer": "Hiện tại tôi không được cấp tool để đọc file hay truy cập dữ liệu chính sách hoàn tiền, nên không thể kiểm tra trực tiếp trường hợp của bạn và không bịa kết quả.\n\nBạn mua ngày 28/09/2026 và yêu cầu hoàn ngày 06/10/2026 (cách 8 ngày), chưa kích hoạt.\n\nĐể xác nhận có được hoàn hay không, bạn vui lòng cung cấp nội dung chính sách hoàn hoặc liên hệ bộ phận hỗ trợ để đối chiếu điều kiện về thời hạn hoàn và trạng thái kích hoạt."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "mode": "live-provider",
+  "stage": "stage-01-files",
+  "case": "missing-activation",
+  "question": "Tôi mua ngày 02/10/2026, muốn hoàn ngày 12/10/2026.",
+  "model": "oc/muse-spark-1.2-contributor-free",
+  "conversation_id": "e561ed50db134a46b6f8639132313045",
+  "renamed_files": {},
+  "trace": "20261007-215951_e561ed50_turn01_30cd04a4.jsonl",
+  "status": "completed",
+  "answer": "Bạn mua **02/10/2026** thì áp dụng **Chính sách hoàn tiền từ tháng 10** (áp dụng từ 01/10/2026):\n\n* Được yêu cầu hoàn trong **14 ngày kể từ ngày mua** -> hạn đến hết **16/10/2026**\n* **Không thu phí** hoàn tiền\n* Điều kiện: sản phẩm **chưa kích hoạt**\n\nBạn muốn hoàn ngày **12/10/2026** là sau 10 ngày -> **vẫn trong hạn, đủ điều kiện hoàn** (nếu chưa kích hoạt).\n\n> Đã đối chiếu 2 file: `policy-before-oct.md` (trước 01/10, 7 ngày, phí 10%) không áp dụng cho bạn, và `policy-from-oct.md` (từ 01/10, 14 ngày) mới là chính sách áp dụng.",
+  "inventory": {
+    "skills": [],
+    "resources": [
+      {
+        "path": "data/policies/policy-before-oct.md",
+        "message_index": 8,
+        "tool_call_id": "call_01a116e121b874c08efb832c00d4afcb"
+      },
+      {
+        "path": "data/policies/policy-from-oct.md",
+        "message_index": 10,
+        "tool_call_id": "call_01a116e12f9b7105a89a36b047213ba8"
+      }
+    ]
+  }
+}

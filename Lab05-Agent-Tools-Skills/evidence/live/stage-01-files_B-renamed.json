@@ -1,0 +1,30 @@
+{
+  "mode": "live-provider",
+  "stage": "stage-01-files",
+  "case": "B-renamed",
+  "question": "Tôi mua ngày 02/10/2026, yêu cầu hoàn ngày 12/10/2026, chưa kích hoạt. Tôi có được hoàn không?",
+  "model": "oc/muse-spark-1.2-contributor-free",
+  "conversation_id": "402d93e8512642a1a9197ab2e1a0c9fe",
+  "renamed_files": {
+    "policy-before-oct.md": "edition-31.md",
+    "policy-from-oct.md": "edition-32.md"
+  },
+  "trace": "20261007-215927_402d93e8_turn01_5183d005.jsonl",
+  "status": "completed",
+  "answer": "Bạn **được hoàn tiền** với trường hợp này.\n\nTheo chính sách tôi đã kiểm tra:\n\n**Áp dụng `data/policies/edition-32.md` - Chính sách từ 01/10/2026:**\n> Áp dụng cho ngày mua từ 2026-10-01 (bao gồm ngày này)\n\nBạn mua ngày **02/10/2026** → thuộc chính sách này.\n\nĐiều kiện của edition-32:\n1. Yêu cầu hoàn trong **14 ngày** kể từ ngày mua\n2. **Không hoàn nếu đã kích hoạt**\n\nĐối chiếu của bạn:\n*   Ngày mua 02/10 → yêu cầu 12/10 = **10 ngày** → **trong hạn 14 ngày** (hạn cuối đến 16/10/2026)\n*   Chưa kích hoạt → **đủ điều kiện**\n\n**Kết quả:** Được hoàn **100%**, **không thu phí**.",
+  "inventory": {
+    "skills": [],
+    "resources": [
+      {
+        "path": "data/policies/edition-32.md",
+        "message_index": 8,
+        "tool_call_id": "call_01a116e092a8772ab8aba66fc0b8a84c"
+      },
+      {
+        "path": "data/policies/edition-31.md",
+        "message_index": 9,
+        "tool_call_id": "call_01a116e091a372baaeb72f2c91243b31"
+      }
+    ]
+  }
+}

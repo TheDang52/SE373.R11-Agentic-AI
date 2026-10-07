@@ -1,0 +1,41 @@
+{
+  "mode": "live-provider",
+  "stage": "stage-02-skills",
+  "case": "missing-activation",
+  "question": "Tôi mua ngày 02/10/2026, muốn hoàn ngày 12/10/2026.",
+  "model": "oc/muse-spark-1.2-contributor-free",
+  "conversation_id": "4808f51b8b39463daba0a4e42de77325",
+  "renamed_files": {},
+  "trace": "20261007-220222_4808f51b_turn01_1dfa5ed5.jsonl",
+  "status": "completed",
+  "answer": "Bạn mua ngày 02/10/2026 và muốn hoàn ngày 12/10/2026 — để xác định đủ điều kiện theo đúng chính sách áp dụng cho ngày mua, mình cần thêm thông tin:\n\nSản phẩm của bạn đã được kích hoạt chưa?\n\nVui lòng cho biết đã kích hoạt hay chưa kích hoạt để mình đối chiếu thời hạn và điều kiện hoàn tiền.",
+  "inventory": {
+    "skills": [
+      {
+        "path": "skills/refund-policy/SKILL.md",
+        "message_index": 2,
+        "tool_call_id": "call_01a116e321e177eebb4562c7efcb4dda",
+        "skill": "refund-policy",
+        "chars": 1754,
+        "first_request": "Lượt 1, model call #2"
+      }
+    ],
+    "resources": [
+      {
+        "path": "data/policies/policy-before-oct.md",
+        "message_index": 6,
+        "tool_call_id": "call_01a116e34974747caf84702d9cb548f8"
+      },
+      {
+        "path": "skills/refund-policy/references/answer-template.md",
+        "message_index": 7,
+        "tool_call_id": "call_01a116e34d7b769c9688e182f4cd388d"
+      },
+      {
+        "path": "data/policies/policy-from-oct.md",
+        "message_index": 8,
+        "tool_call_id": "call_01a116e34b9c7064b7311e985fff2ff9"
+      }
+    ]
+  }
+}

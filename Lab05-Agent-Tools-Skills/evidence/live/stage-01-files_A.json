@@ -1,0 +1,27 @@
+{
+  "mode": "live-provider",
+  "stage": "stage-01-files",
+  "case": "A",
+  "question": "Tôi mua ngày 28/09/2026, yêu cầu hoàn ngày 06/10/2026, chưa kích hoạt. Tôi có được hoàn không?",
+  "model": "oc/muse-spark-1.2-contributor-free",
+  "conversation_id": "0a535b9ccdac425cb79181e4c262af81",
+  "renamed_files": {},
+  "trace": "20261007-221518_0a535b9c_turn01_c95bc0ba.jsonl",
+  "status": "completed",
+  "answer": "Với ngày mua **28/09/2026** của bạn:\n\nTheo `data/policies/policy-before-oct.md` (áp dụng cho ngày mua **trước 2026-10-01**):\n* Được yêu cầu hoàn tiền **trong 7 ngày kể từ ngày mua**\n* Không hoàn tiền nếu đã kích hoạt\n\nĐối chiếu:\n* Bạn **chưa kích hoạt** -> thỏa điều kiện này.\n* Nhưng từ 28/09 đến 06/10 là **8 ngày** (hạn 7 ngày là đến hết 05/10/2026). Yêu cầu ngày 06/10 đã **quá hạn 1 ngày**.\n\n=> **Bạn không được hoàn tiền** theo chính sách trước tháng 10.\n\n*Lưu ý: Nếu mua từ 01/10/2026 trở đi thì áp dụng `policy-from-oct.md` được hoàn trong 14 ngày và không mất phí.*",
+  "inventory": {
+    "skills": [],
+    "resources": [
+      {
+        "path": "data/policies/policy-before-oct.md",
+        "message_index": 8,
+        "tool_call_id": "call_01a116ef1b517696b262726fc8bd79bd"
+      },
+      {
+        "path": "data/policies/policy-from-oct.md",
+        "message_index": 10,
+        "tool_call_id": "call_01a116ef2bce748e8adbfb299773523e"
+      }
+    ]
+  }
+}

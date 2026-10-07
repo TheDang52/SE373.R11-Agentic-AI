@@ -1,0 +1,30 @@
+{
+  "mode": "live-provider",
+  "stage": "stage-01-files",
+  "case": "A-renamed",
+  "question": "Tôi mua ngày 28/09/2026, yêu cầu hoàn ngày 06/10/2026, chưa kích hoạt. Tôi có được hoàn không?",
+  "model": "oc/muse-spark-1.2-contributor-free",
+  "conversation_id": "434137190e694a29b4f5b5b1d0d2a9f9",
+  "renamed_files": {
+    "policy-before-oct.md": "edition-31.md",
+    "policy-from-oct.md": "edition-32.md"
+  },
+  "trace": "20261007-215834_43413719_turn01_84703eb9.jsonl",
+  "status": "completed",
+  "answer": "Với đơn của bạn **không được hoàn**:\n\n* **Ngày mua 28/09/2026** → áp dụng **Chính sách trước tháng 10 (edition-31)** - áp dụng cho ngày mua **trước 01/10/2026**.\n  * Điều kiện: được yêu cầu hoàn trong **7 ngày kể từ ngày mua**, chưa kích hoạt (bạn thỏa điều kiện chưa kích hoạt), phí 10%.\n\n* **Ngày yêu cầu 06/10/2026** cách ngày mua 28/09 là **8 ngày** (28/09 → 05/10 là đã 7 ngày), nên đã **quá hạn 7 ngày**.\n\n> Nếu yêu cầu chậm nhất 05/10/2026 thì bạn đã được hoàn (mất phí 10%).\n\nChính sách mới **từ tháng 10 (edition-32)** cho 14 ngày và miễn phí nhưng chỉ áp dụng cho ngày mua **từ 01/10/2026**, nên không áp dụng cho đơn 28/09 của bạn.",
+  "inventory": {
+    "skills": [],
+    "resources": [
+      {
+        "path": "data/policies/edition-31.md",
+        "message_index": 8,
+        "tool_call_id": "call_01a116e00f3775ddb613aae9788df633"
+      },
+      {
+        "path": "data/policies/edition-32.md",
+        "message_index": 9,
+        "tool_call_id": "call_01a116e011f175a786a14b35556551d7"
+      }
+    ]
+  }
+}

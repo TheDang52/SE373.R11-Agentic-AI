@@ -1,0 +1,11 @@
+{
+  "mode": "live-provider",
+  "stage": "stage-01-files",
+  "case": "B",
+  "question": "Tôi mua ngày 02/10/2026, yêu cầu hoàn ngày 12/10/2026, chưa kích hoạt. Tôi có được hoàn không?",
+  "model": "oc/muse-spark-1.2-contributor-free",
+  "conversation_id": "0968daf9e54642829c266fabb73c7c66",
+  "renamed_files": {},
+  "trace": "20261007-221551_0968daf9_turn01_7237ab7a.jsonl",
+  "status": "running"
+}
